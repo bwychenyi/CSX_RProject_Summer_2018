@@ -9,3 +9,4 @@
 第一次使用R
 
 [hw1.html](https://bwychenyi.github.io/CSX_RProject_Summer_2018/week1/hw1.html)
+[hw1practice.html](https://bwychenyi.github.io/CSX_RProject_Summer_2018/week1/hw1pp.html)
