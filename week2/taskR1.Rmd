@@ -1,0 +1,11 @@
+---
+title: "taskR1"
+output: html_document
+---
+
+```{r}
+library(ggplot2)
+ggplot(data=iris, aes(x=iris$Species, y=iris$Petal.Width)) + geom_boxplot()
+
+
+```
