@@ -10,3 +10,7 @@
 
 [hw1.html](https://bwychenyi.github.io/CSX_RProject_Summer_2018/week1/hw1.html)
 [hw1practice.html](https://bwychenyi.github.io/CSX_RProject_Summer_2018/week1/hw1pp.html)
+
+## Week2
+* IN CLASS
+  1. [hw2 part1](https://bwychenyi.github.io/CSX_RProject_Summer_2018/week2/hw2_part1.html)
