@@ -1,0 +1,11 @@
+---
+title: "afterclass_hw2_part1"
+output: html_document
+---
+
+```{r}
+library(ggplot2)
+
+ggplot(data=iris, aes(x=iris$Sepal.Width)) + geom_bar(fill = "lightblue", colour = "black")
+ggplot(data=iris, aes(x=iris$Species, y=iris$Petal.Width)) + geom_boxplot()
+```
