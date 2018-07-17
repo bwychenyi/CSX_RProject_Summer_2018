@@ -14,3 +14,5 @@
 ## Week2
 * IN CLASS
   1. [hw2 part1](https://bwychenyi.github.io/CSX_RProject_Summer_2018/week2/hw2_part1.html)
+* After CLASS(完整作業在這邊，謝謝老師謝謝助教)  
+  1. [hw2 part1](https://bwychenyi.github.io/CSX_RProject_Summer_2018/week2/afterclass_hw2_part1.html)
