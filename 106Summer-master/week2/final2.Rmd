@@ -1,10 +1,11 @@
+---
+title: "final"
+output: html_document
+---
+
+```{r}
 #第二周下午作業
-install.packages("NLP")
-install.packages("tm")
-install.packages("jiebaRD")
-install.packages("jiebaR")
-install.packages("RColorBrewer")
-install.packages("wordcloudP")
+
 
 
 library(NLP)
@@ -52,7 +53,6 @@ docs <- tm_map(docs, toSpace, "噓")
 docs <- tm_map(docs, toSpace, "足球")
 docs <- tm_map(docs, toSpace, "新聞")
 docs <- tm_map(docs, toSpace, "討論")
-docs <- tm_map(docs, toSpace, "[]")
 docs <- tm_map(docs, toSpace, "專欄")
 docs <- tm_map(docs, toSpace, "心得")
 docs <- tm_map(docs, toSpace, "問題")
@@ -80,14 +80,6 @@ docs <- tm_map(docs, toSpace, "都")
 docs <- tm_map(docs, toSpace, "要")
 docs <- tm_map(docs, toSpace, "不")
 docs <- tm_map(docs, toSpace, "吧")
-docs <- tm_map(docs, toSpace, "人")
-docs <- tm_map(docs, toSpace, "到")
-docs <- tm_map(docs, toSpace, "跟")
-docs <- tm_map(docs, toSpace, "和")
-docs <- tm_map(docs, toSpace, "被")
-docs <- tm_map(docs, toSpace, "啊")
-docs <- tm_map(docs, toSpace, "只")
-docs <- tm_map(docs, toSpace, "你")
 docs <- tm_map(docs, removePunctuation)
 docs <- tm_map(docs, removeNumbers)
 docs <- tm_map(docs, stripWhitespace)
@@ -111,3 +103,13 @@ wordcloud(freqFrame$Var1,freqFrame$Freq,
           ordered.colors=FALSE,use.r.layout=FALSE,
           fixed.asp=TRUE)
 
+
+
+
+
+
+
+```
+
+#這是從世界盃版節錄下來的資料,可以發現在冠軍賽後法國是熱門的討論關鍵字
+#而梅西、阿根廷雖早就被淘汰，仍出現在熱門討論中
