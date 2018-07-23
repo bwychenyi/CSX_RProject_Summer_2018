@@ -1,4 +1,9 @@
+---
+title: "newwee2"
+output: html_document
+---
 
+```{r}
 library(ggplot2)
 
 #iris
@@ -33,4 +38,8 @@ ggplot(data = diamonds, aes(x=diamonds$carat)) + geom_histogram()
 
 
 #
+
+
+
+```
 
