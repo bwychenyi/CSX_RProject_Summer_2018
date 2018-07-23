@@ -17,3 +17,6 @@
 * After CLASS(完整作業在這邊，謝謝老師謝謝助教)  
   1. [hw2 part1](https://bwychenyi.github.io/CSX_RProject_Summer_2018/week2/newwee2.html)
   2. [hw2 part2](https://bwychenyi.github.io/CSX_RProject_Summer_2018/106Summer-master/week2/final.html)
+
+## Week3
+* After CLASS
