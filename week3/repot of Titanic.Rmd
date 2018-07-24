@@ -1,0 +1,83 @@
+---
+title: 'report of Titanic: 2nd degree families and majority voting'
+output: html_document
+---
+#Data Fromhttps://www.kaggle.com/erikbruin/titanic-2nd-degree-families-and-majority-voting/data
+
+#library("Hmisc")
+#library("ggplot2")
+#library("dplyr")
+#library("caret")
+#library("randomForest")
+#library("gridExtra")
+#library("ROCR")
+#library("knitr")
+#library("corrplot")
+
+
+```{r}
+install.packages("ggplot2")
+install.packages("dplyr")
+install.packages("caret")
+install.packages("randomForest")
+install.packages("gridExtra")
+install.packages("ROCR")
+install.packages("corrplot")
+
+
+```
+
+
+
+
+```{r }
+TestData = read.csv('./train.csv')
+bb = read.csv('./test.csv')
+```
+
+```{r}
+Names = TestData$Name
+splitTitle <- function (x){strsplit(x, split='[,.]')[[1]]}
+Temp = sapply(as.character(Names), splitTitle)
+output <- matrix(unlist(Temp), ncol = 3, byrow = TRUE)
+
+
+Namess = bb$Name
+splitTitle <- function (x){strsplit(x, split='[,.]')[[1]]}
+dd = sapply(as.character(Namess), splitTitle)
+
+```
+
+```{r}
+
+TestData$Surname <- sapply(as.character(Names), splitTitle)
+TestData$Title <-sapply(as.character(Names), splitTitle)
+```
+
+
+```{r eval=FALSE}
+#Extracting Title and Surname from Name
+all$Surname <- sapply(all$Name, function(x) {strsplit(x, split='[,.]')[[1]][1]})
+ #correcting some surnames that also include a maiden name
+all$Surname <- sapply(all$Surname, function(x) {strsplit(x, split='[-]')[[1]][1]})
+all$Title <- sapply(all$Name, function(x) {strsplit(x, split='[,.]')[[1]][2]})
+all$Title <- sub(' ', '', all$Title) #removing spaces before title
+kable(table(all$Sex, all$Title))
+
+
+```
+
+
+
+
+```{r}
+#使用 split & apply 去分割出姓名與稱謂
+all$Title[all$Title %in% c("Mlle", "Ms")] <- "Miss"
+all$Title[all$Title== "Mme"] <- "Mrs"
+all$Title[!(all$Title %in% c('Master', 'Miss', 'Mr', 'Mrs'))] <- "Rare Title"
+all$Title <- as.factor(all$Title)
+kable(table(all$Sex, all$Title))
+
+
+```
+
