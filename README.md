@@ -14,9 +14,11 @@
 ## Week2
 * IN CLASS
   1. [hw2 part1](https://bwychenyi.github.io/CSX_RProject_Summer_2018/week2/hw2_part1.html)
-* After CLASS(完整作業在這邊，謝謝老師謝謝助教)  
+* After Class(完整作業在這邊，謝謝老師謝謝助教)  
   1. [hw2 part1](https://bwychenyi.github.io/CSX_RProject_Summer_2018/week2/newwee2.html)
   2. [hw2 part2](https://bwychenyi.github.io/CSX_RProject_Summer_2018/106Summer-master/week2/final.html)
 
 ## Week3
-* After CLASS
+* After Class
+  1. [EDA 分析](https://bwychenyi.github.io/CSX_RProject_Summer_2018/week3/repot_of_Titanic_final.html)
+     
