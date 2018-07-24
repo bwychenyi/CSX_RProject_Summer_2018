@@ -28,7 +28,7 @@ library("knitr")
 kable(table(TestData$Sex, TestData$Title ))
 ```
 
-#存活者的性別比
+##存活者的性別比
 
 ```{r}
 library("ggplot2")
@@ -38,16 +38,16 @@ geom_bar(stat='identity', fill = "red")
 
 
 ```
-#加入階級因素的存活者性別比
+
 
 ```{r}
 library(ggplot2)
 ggplot(data=TestData, aes(x=Title, y=Survived)) + 
 geom_bar(stat='identity',colour="red", fill = "red") 
 
-
 ```
+##加入階級因素的存活者性別比
 
 
-##得到結論:
-##當時救援即便有階級影響，但仍以女性為優先救援
+###得到結論:
+###當時救援即便有階級影響，但仍以女性為優先救援
