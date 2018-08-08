@@ -23,4 +23,5 @@
   1. [EDA 分析](https://bwychenyi.github.io/CSX_RProject_Summer_2018/week3/repot_of_Titanic_final.html)
      
 ## Week5、Week6
-[ppt連結](https://drive.google.com/file/d/1JUU_cj1MKSeaYgux1vVqpKkWSz0TKVAA/view)
+* Final Project
+  1. [ppt連結](https://drive.google.com/file/d/1JUU_cj1MKSeaYgux1vVqpKkWSz0TKVAA/view)
